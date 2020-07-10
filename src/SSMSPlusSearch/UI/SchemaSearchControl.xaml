@@ -127,6 +127,17 @@
                       ResizeDirection="Rows"
                       ShowsPreview="False"
                       Grid.Row="1">
+
+                <GridSplitter.Template>
+                    <ControlTemplate TargetType="{x:Type GridSplitter}">
+                        <Grid>
+                            <Button Content="" Width="35" HorizontalAlignment="Center" />
+                            <TextBlock HorizontalAlignment="Center" TextAlignment="Center" Margin="0,0,0,3" VerticalAlignment="Center" Text="•••" FontSize="15"  Foreground="Black" Width="35"/>
+                            <Rectangle Fill="#00FFFFFF" />
+                        </Grid>
+                    </ControlTemplate>
+                </GridSplitter.Template>
+
             </GridSplitter>
         </Grid>
     </Grid>
